@@ -13,13 +13,15 @@ var Brad01Layer = cc.Layer.extend({
         colorLayer.ignoreAnchorPointForPosition(false);
         this.addChild(colorLayer);
 
-        var mylabel = new cc.LabelTTF("My Game","Arial",48,cc.size(320,96));
-        cc.size(320,96),
-        cc.TEXT_ALIGNMENT_CENTER,
-        cc.VERTICAL_TEXT_ALIGNMENT_TOP
+        var mylabel = new cc.LabelTTF("My Game","Arial",48,
+            cc.size(320,96),
+            cc.TEXT_ALIGNMENT_CENTER,
+            cc.VERTICAL_TEXT_ALIGNMENT_CENTER);
+
 
         mylabel.x = size.width /2;
         mylabel.y = size.height /2;
+        mylabel.setColor(cc.color(0,0,255));
 
 
         this.addChild(mylabel);
